@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LivBetter</title>
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+      }
+
+      .background-container {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background-image: url("logo/assets/img.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      .logo-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        max-width: 600px;
+      }
+
+      .logo-container svg {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      /* Color Catalog Styles */
+      .color-catelog-box-contaner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 30px;
+        background-color: rgba(0, 0, 0, 0.85);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        overflow-y: auto;
+        max-height: 40%;
+      }
+
+      .color-box {
+        width: 250px;
+        height: 180px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+      }
+
+      .color-swatch {
+        height: 120px;
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        padding: 10px;
+      }
+
+      .color-info {
+        background-color: white;
+        padding: 15px;
+        flex-grow: 1;
+      }
+
+      .color-name {
+        font-weight: bold;
+        margin-bottom: 5px;
+        font-family: sans-serif;
+      }
+
+      .color-values {
+        font-size: 12px;
+        font-family: monospace;
+        color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background-container">
+      <div class="logo-container">
+        <!-- SVG logo inline -->
+        <svg
+          id="Layer_1"
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 564.673 100.98"
+        >
+          <defs>
+            <style>
+              .cls-1,
+              .cls-2 {
+                fill: #fff;
+              }
+
+              .cls-1,
+              .cls-3 {
+                opacity: 0.9;
+              }
+            </style>
+          </defs>
+          <g class="cls-3">
+            <path
+              class="cls-2"
+              d="M84.498,70.59c-.672,2.139-1.851,4.154-3.398,5.786-5.416,5.715-14.486,6.25-21.875,6.25H23.264c-.992,0-1.796-.799-1.796-1.783V20.402c0-.984.804-1.782,1.796-1.782h4.966c.992,0,1.796.798,1.796,1.782v54.028c0,.985.805,1.783,1.797,1.783h19.44c6.571,0,14.941.833,19.36-5.171,1.717-2.333,2.81-5.349,2.252-8.279-.51-2.674-2.238-5.215-4.735-6.422-3.041-1.47-6.047-.456-9.196-.174-1.172.104-2.144-.094-3.271-.35-1.13-.257-2.248-.919-3.053-1.734-2.971-3.006-1.344-8.688,1.69-10.993,3.204-2.435 6.576-4.76 9.368-7.672 2.158-2.251 3.946-5.315 3.224-8.552-.524-2.353-2.153-4.074-4.439-4.846-1.197-.405-2.471-.558-3.731-.582h-3.243l-6.059.269c-.96.043-1.716.828-1.716,1.781v43.036c0,.985-.804,1.783-1.796,1.783h-4.967c-.992,0-1.796-.798-1.796-1.783V20.402c0-.984.804-1.782,1.796-1.782h30.641c3.12,0,6.217,2.263,7.13,5.178.753,2.409.531,5.174-.301,7.536-.925,2.625-2.84,4.656-5.377,5.81-2.049.931-4.101,1.855-6.158,2.769-2.042.908-4.075,1.834-6.141,2.686-2.536,1.046-7.297,2.003-7.546,5.385-.033.445-.003,1.033.235,1.424.537.883,1.593.356,2.257-.094.056-.038.111-.077.166-.117,5.394-3.876,13.016-4.026,19.098-1.744,2.545.955,4.935,2.47 6.644,4.597 4.008 4.989 4.78 12.564 2.899 18.54M50.49,100.98c27.885,0,50.49-22.605,50.49-50.49S78.375,0,50.49,0,0,22.605,0,50.49s22.605,50.49,50.49,50.49"
+            />
+          </g>
+          <polygon
+            class="cls-1"
+            points="130.555 25.771 130.555 75.185 164.899 75.185 164.899 66.302 140.746 66.302 140.746 25.771 130.555 25.771"
+          />
+          <rect
+            class="cls-1"
+            x="178.759"
+            y="25.793"
+            width="10.125"
+            height="49.415"
+          />
+          <polygon
+            class="cls-1"
+            points="235.124 25.794 224.436 63.308 213.849 25.794 202.964 25.794 219.441 75.209 229.069 75.209 245.712 25.794 235.124 25.794"
+          />
+          <path
+            class="cls-1"
+            d="M281.658,45.271h-11.977v-10.895h10.72c2.36,0,4.301.257,5.823.771,1.765.738,2.647,2.258,2.647,4.559,0,2.079-.662,3.52-1.985,4.325-1.346.827-3.088,1.24-5.228,1.24M286.754,54.289c2.095.962,3.143,2.727,3.143,5.297,0,3.04-1.081 5.096-3.243 6.169-1.191.581-2.856.871-4.996.871h-11.977v-13.175h12.143c2.117.023,3.76.302,4.93.838M288.987,74.538c2.128-.447,3.976-1.274,5.542-2.481,1.39-1.05,2.548-2.346,3.474-3.889,1.456-2.324,2.184-4.95,2.184-7.878,0-2.838-.635-5.252-1.903-7.241-1.268-1.989-3.149-3.441-5.641-4.358,1.632-.849,2.867-1.788,3.706-2.816,1.499-1.832,2.25-4.258,2.25-7.275,0-2.928-.751-5.442-2.25-7.543-2.493-3.419-6.728-5.174-12.705-5.263h-23.69v49.414h22.101c2.493,0,4.803-.223,6.932-.67"
+          />
+          <polygon
+            class="cls-1"
+            points="314.886 25.794 314.886 75.209 351.844 75.209 351.844 66.325 324.844 66.325 324.844 53.619 348.534 53.619 348.534 45.037 324.844 45.037 324.844 34.544 350.652 34.544 350.652 25.794 314.886 25.794"
+          />
+          <polygon
+            class="cls-1"
+            points="366.312 25.794 366.312 34.544 380.969 34.544 380.969 75.209 391.226 75.209 391.226 34.544 405.817 34.544 405.817 25.794 366.312 25.794"
+          />
+          <polygon
+            class="cls-1"
+            points="419.894 25.794 419.894 34.544 434.551 34.544 434.551 75.209 444.808 75.209 444.808 34.544 459.399 34.544 459.399 25.794 419.894 25.794"
+          />
+          <polygon
+            class="cls-1"
+            points="473.674 25.794 473.674 75.209 510.631 75.209 510.631 66.325 483.632 66.325 483.632 53.619 507.322 53.619 507.322 45.037 483.632 45.037 483.632 34.544 509.441 34.544 509.441 25.794 473.674 25.794"
+          />
+          <path
+            class="cls-1"
+            d="M546.243,47.651h-11.547v-13.275h11.845c2.205,0,3.859.29,4.963.871,1.963,1.028,2.944,3.04,2.944,6.035,0,2.771-1.015,4.626-3.044,5.565-1.147.536-2.867.804-5.161.804M553.385,63.153c-.017,2.295,0,10.266,0,12.055h9.986l-.055-11.968c0-3.464-.468-6.04-1.406-7.727-.938-1.688-2.531-2.989-4.781-3.906,2.691-.939,4.621-2.542 5.79-4.811 1.169-2.268 1.754-4.576 1.754-6.922,0-1.945-.309-3.677-.926-5.197-.618-1.519-1.456-2.905-2.515-4.157-1.28-1.519-2.84-2.67-4.682-3.453-1.842-.782-4.472-1.207-7.891-1.274h-23.921v49.415h9.959v-19.377h11.877c3.665,0,6.853,1.678 6.811 7.322"
+          />
+        </svg>
+      </div>
+    </div>
+    <div class="color-catelog-box-contaner">
+      <!-- Box 0: Sage -->
+      <div class="color-box">
+        <div class="color-swatch" style="background-color: #7d8c65"></div>
+        <div class="color-info">
+          <div class="color-name">Sage</div>
+          <div class="color-values">
+            RGB: 125/140/101 <br />
+            HEX: #7D8C65
+          </div>
+        </div>
+      </div>
+
+      <!-- Box 1: Espresso -->
+      <div class="color-box">
+        <div class="color-swatch" style="background-color: #352519"></div>
+        <div class="color-info">
+          <div class="color-name">Espresso</div>
+          <div class="color-values">
+            RGB: 54/38/26 <br />
+            HEX: #352519
+          </div>
+        </div>
+      </div>
+
+      <!-- Box 2: Chocolate -->
+      <div class="color-box">
+        <div class="color-swatch" style="background-color: #4d392c"></div>
+        <div class="color-info">
+          <div class="color-name">Chocolate</div>
+          <div class="color-values">
+            RGB: 77/58/45 <br />
+            HEX: #4D392C
+          </div>
+        </div>
+      </div>
+
+      <!-- Box 3: Terracotta -->
+      <div class="color-box">
+        <div class="color-swatch" style="background-color: #8d4c24"></div>
+        <div class="color-info">
+          <div class="color-name">Terracotta</div>
+          <div class="color-values">
+            RGB: 141/77/36 <br />
+            <!-- 141, 76, 36  -->
+            HEX: #8D4C24
+          </div>
+        </div>
+      </div>
+
+      <!-- Box 4: Putty -->
+      <div class="color-box">
+        <div class="color-swatch" style="background-color: #ddd4c5"></div>
+        <div class="color-info">
+          <div class="color-name">Putty</div>
+          <div class="color-values">
+            RGB: 222/223/197 <br />
+            HEX: #DDD4C5
+          </div>
+        </div>
+      </div>
+
+      <!-- Box 5: Sand -->
+      <div class="color-box">
+        <div class="color-swatch" style="background-color: #faf7ef"></div>
+        <div class="color-info">
+          <div class="color-name">Sand</div>
+          <div class="color-values">
+            RGB: 251/247/239 <br />
+            <!-- 250, 247, 239 -->
+            HEX: #FAF7EF
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
